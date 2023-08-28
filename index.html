@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Product Store</title>
+  </head>
+  <body>
+    <!-- Top Menu -->
+    <header id="Top-Menu">
+      <h1>My Product Store</h1>
+      <i id="control-point-icon" class="material-icons">control_point</i>
+
+      <i id="House-icon" class="material-icons" onclick="navigateToHomePage()"
+        >home</i
+      >
+
+      <script>
+        function navigateToHomePage() {
+          // Change the URL to the desired HTML page
+          window.location.href = "./project.html";
+        }
+      </script>
+      <div id="filtering">
+        <!-- Product Search -->
+        <div id="Product-Search">
+          <input
+            class="search-bar"
+            type="text"
+            placeholder="Search for a product"
+          />
+          <button class="search-button">
+            <i class="material-icons">search</i>
+          </button>
+        </div>
+        <!-- Product Filtering -->
+        <div id="Filter-Buttons">
+          <button class="Filter-button">All Products</button>
+          <button class="Filter-button">Men</button>
+          <button class="Filter-button">Women</button>
+          <button class="Filter-button">Jewelry</button>
+          <button class="Filter-button">Electronics</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Product Page -->
+    <h2 id="h2">Products</h2>
+    <main id="root"></main>
+
+    <!-- Product Details Page -->
+    <main id="main_detailsd"></main>
+
+    <!-- Edit Product Page -->
+    <main id="main_edit"></main>
+    <!-- יצירת מוצר חדש -->
+    <main id="main_edit_new"></main>
+
+    <!-- Footer -->
+    <footer id="last-Line">
+      <span class="Bottom-line-text">Technical</span>
+      <i class="material-icons">local_phone</i>
+      <span class="Bottom-line-text">1800-722-722</span>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
