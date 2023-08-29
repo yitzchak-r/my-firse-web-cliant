@@ -503,7 +503,7 @@ const productCards = (data) => {
 
 const handleProducts = () => {
   console.log("in handleProducts");
-  fetch("http://localhost:3000/products")
+  fetch("https://yitzchak-rosenhan.onrender.com/products")
     .then((response) => response.json())
     .then((data) => productCards(data))
     .catch((err) => console.log(err));
