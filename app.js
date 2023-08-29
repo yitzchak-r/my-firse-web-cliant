@@ -503,7 +503,7 @@ const productCards = (data) => {
 
 const handleProducts = () => {
   console.log("in handleProducts");
-  fetch("https://yitzchak-rosenhan.onrender.com/")
+  fetch("https://melodious-moxie-631a1f.netlify.app/")
     .then((response) => response.json())
     .then((data) => productCards(data))
     .catch((err) => console.log(err));
